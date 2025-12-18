@@ -1,6 +1,6 @@
 # CSS Motion Lab
 
-A showcase of advanced CSS animations, interactions, and theming —
+A showcase of advanced CSS animations, interactions, and theming
 built with **pure CSS** and minimal JavaScript.
 
 ## Features
