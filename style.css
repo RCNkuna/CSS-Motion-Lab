@@ -1,0 +1,100 @@
+:root {
+  --bg: #0a0a0f;
+  --card: #12121a;
+  --text: #ffffff;
+  --accent: #00eaff;
+  --radius: 12px;
+}
+
+[data-theme="light"] {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --text: #111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #5eead4 0%, transparent 40%),
+    radial-gradient(1000px 600px at 90% 10%, #818cf8 0%, transparent 40%),
+    radial-gradient(800px 600px at 50% 100%, #f472b6 0%, transparent 40%),
+    #05070f;
+}
+
+.top-bar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls button {
+  margin-right: 10px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.lab {
+  margin-bottom: 60px;
+}
+
+.demo-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.progress {
+  width: 300px;
+  height: 10px;
+  background: #333;
+  border-radius: 6px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  width: var(--value);
+  animation: load 2s ease;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.6;
+  padding: 30px;
+}
+
+@keyframes load {
+  from { width: 0; }
+}
